@@ -1,0 +1,9 @@
+Каталог
+<div ng-controller="CatalogCtrl">
+	<div ng-repeat="item in dat">
+		<div class="title">{{item.title}}</div>
+		<div class="thumb"><img ng-src="{{init.imgPath+item.image}}"></div>
+		<div class="itemDesc">{{item.desc}}</div>
+		<div class=""><a href="#/product/{{dat.indexOf(item)}}">Подробнее</a></div>
+	</div>
+</div>
